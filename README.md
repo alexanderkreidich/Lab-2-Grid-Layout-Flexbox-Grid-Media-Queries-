@@ -2,4 +2,4 @@
 
 Сайт компании Food Construct с возможностью заказа обедов онлайн.
 
-сайт доступен по адресу: `https://ваш-username.github.io/название-репозитория/`
+сайт доступен по адресу: `https://alexanderkreidich.github.io/Lab-2-Grid-Layout-Flexbox-Grid-Media-Queries-/`
