@@ -1,106 +1,106 @@
 /* Стили для страницы "Собрать ланч" */
 
 /* Секция меню */
-.menu-section {
-    margin-bottom: 50px;
+.menu-category {
+  margin-bottom: 50px;
 }
 
-.menu-section h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 30px;
+.menu-category h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 /* Сетка блюд - Grid */
 .dishes-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 /* Карточка блюда - Flexbox */
 .dish-card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    padding: 30px 40px;
-    border-radius: 35px;
-    cursor: pointer;
-    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 35px;
+  cursor: pointer;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 .dish-card:hover {
-    border-color: tomato;
+  border-color: tomato;
 }
 
 .dish-card:hover button {
-    background-color: tomato;
-    color: white;
+  background-color: tomato;
+  color: white;
 }
 
 /* Изображение блюда */
 .dish-card img {
-    width: 100%;
-    border-radius: 35px;
-    margin-bottom: 15px;
+  width: 100%;
+  border-radius: 35px;
+  margin-bottom: 15px;
 }
 
 /* Цена */
 .dish-price {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 /* Название блюда */
 .dish-name {
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-bottom: auto;
-    min-height: 2.4em;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: auto;
+  min-height: 2.4em;
 }
 
 /* Вес/объем */
 .dish-weight {
-    color: #888;
-    font-size: 1rem;
-    margin-bottom: 15px;
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 15px;
 }
 
 /* Кнопка */
 .dish-card button {
-    background-color: #f1eee9;
-    border: none;
-    padding: 10px 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    transition: all 0.3s ease;
-    margin-top: 10px;
+  background-color: #f1eee9;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
 .dish-card button:hover {
-    background-color: #e5e2dd;
+  background-color: #e5e2dd;
 }
 
 /* Адаптивность для планшетов (≤800px) */
 @media (max-width: 800px) {
-    .dishes-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .dishes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Адаптивность для мобильных устройств (≤600px) */
 @media (max-width: 600px) {
-    .menu-section h2 {
-        text-align: center;
-    }
-    
-    .dishes-grid {
-        grid-template-columns: 1fr;
-    }
+  .menu-category h3 {
+    text-align: center;
+  }
+
+  .dishes-grid {
+    grid-template-columns: 1fr;
+  }
 }
